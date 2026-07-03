@@ -1,154 +1,249 @@
-Healthcare Patient Analytics
-Overview
+# 🏥 Healthcare Patient Analytics Dashboard
 
-This project presents an end-to-end Healthcare Analytics solution developed using SQL Server, Power BI, Python, and Machine Learning. The objective is to transform raw healthcare data into meaningful insights that support hospital management in improving operational efficiency, financial planning, and patient care.
+An end-to-end Healthcare Analytics project that transforms raw patient data into actionable business insights using **SQL Server, Power BI, Python, and Machine Learning**.
 
-The project combines SQL-based data exploration, interactive Power BI dashboards, Python exploratory analysis, and a machine learning model for predicting patient readmission risk.
+This project demonstrates the complete analytics lifecycle—from data auditing and SQL analysis to interactive dashboards, exploratory data analysis, and predictive modeling for patient readmission risk.
 
-Project Objectives
-Analyze patient demographics and hospital visit patterns
-Evaluate department performance
-Monitor treatment costs and hospital revenue
-Assess recovery outcomes and readmission risk
-Build an interactive Power BI dashboard
-Develop a machine learning model to predict patient readmission risk
+---
 
-Tech Stack        Tool	Purpose
+# 📌 Project Overview
 
-SQL Server      	Data Cleaning & Analysis
-Power BI	        Dashboard Development
-Python          	Exploratory Data Analysis
-Pandas	          Data Manipulation
-Matplotlib	      Data Visualization
-Seaborn	          Correlation Analysis
-Scikit-Learn	     Machine Learning
+Healthcare organizations generate large volumes of patient data every day. Extracting meaningful insights from this data can help hospital management improve operational efficiency, optimize resource allocation, monitor financial performance, and enhance patient outcomes.
 
-Dataset
+This project analyzes healthcare patient records to answer key business questions related to:
 
-Healthcare Patient Analytics Dataset
+- Patient demographics
+- Department performance
+- Treatment trends
+- Hospital revenue
+- Recovery performance
+- Patient readmission risk
 
-Records
+---
 
-5000
+# 🎯 Business Objectives
 
-Features
+- Analyze patient demographics and regional distribution
+- Identify departments with the highest patient volume
+- Monitor hospital revenue and treatment costs
+- Evaluate recovery performance across departments
+- Analyze emergency versus routine visits
+- Predict patient readmission risk using Machine Learning
 
-12
+---
 
-The dataset includes
+# 🛠 Tech Stack
 
-Patient Demographics
-Department
-Treatment Type
-Visit Type
-Treatment Cost
-Recovery Score
-Readmission Risk
+| Technology | Purpose |
+|------------|----------|
+| SQL Server | Data Cleaning & Business Analysis |
+| Power BI | Interactive Dashboard Development |
+| Python | Exploratory Data Analysis |
+| Pandas | Data Processing |
+| Matplotlib | Data Visualization |
+| Seaborn | Statistical Analysis |
+| Scikit-Learn | Machine Learning |
 
-SQL Analysis
+---
 
-The SQL portion of this project includes
+# 📂 Dataset
 
-Data Audit
-Executive Summary
-Patient Demographics Analysis
-Department Performance
-Treatment Analysis
-Financial Analysis
-Recovery & Readmission Analysis
+**Healthcare Patient Analytics Dataset**
 
-Power BI Dashboard
+**Dataset Summary**
 
-The dashboard consists of four interactive pages.
+- 📄 Records : **5,000**
+- 📊 Features : **12**
+- 🏥 Departments : 5
+- 🌍 Regions : 4
+- 👥 Gender : Male, Female
+- 🚑 Visit Types : Emergency, Routine
+- 💊 Treatment Types : Medication, Surgery, Therapy, Observation
 
-Executive Overview
+---
 
-Provides high-level KPIs including
+# 📁 Project Structure
 
-Total Patients
-Revenue
-Average Stay
-Average Recovery Score
-Average Readmission Risk
-Patient Demographics
-
-Analyzes
-
-Age Groups
-Gender Distribution
-Regional Distribution
-Department-wise Patient Volume
-Financial & Treatment Analysis
-
-Includes
-
-Revenue by Department
-Revenue by Treatment Type
-Monthly Revenue Trend
-Average Treatment Cost
-Recovery & Quality Metrics
-
-Analyzes
-
-Recovery Score
-Readmission Risk
-Department Performance
-Recovery by Age Group
-Python Analysis
-
-Python was used for
-
-Data Inspection
-Data Cleaning
-Exploratory Data Analysis
-Correlation Analysis
-Business Insights
-Business Recommendations
-Machine Learning
-
-Business Problem
-
-Predict patient readmission risk.
-
-Model
-
-Random Forest Classifier
-
-Model Evaluation
-
-Accuracy
-Precision
-Recall
-F1 Score
-Classification Report
-Confusion Matrix
-Feature Importance
-Business Insights
-Identified departments with the highest patient volume.
-Analyzed revenue contribution across hospital departments.
-Evaluated treatment costs and hospital stay duration.
-Measured recovery performance across departments.
-Assessed patient readmission risk.
-Identified key features influencing readmission prediction.
-
-Repository Structure
+```
 Healthcare-Patient-Analytics
 │
 ├── Dataset
 ├── SQL
+│   ├── Data Audit
+│   ├── Executive Summary
+│   ├── Patient Demographics
+│   ├── Department Analysis
+│   ├── Treatment Analysis
+│   ├── Financial Analysis
+│   └── Recovery & Readmission Analysis
+│
 ├── Power BI
+│
 ├── Python
+│   ├── Exploratory Data Analysis
+│   └── Machine Learning
+│
 ├── Images
+│
 └── README.md
+```
 
-Future Improvements
-Deploy dashboard online
-Build patient outcome prediction model
-Add hospital performance forecasting
-Create an interactive Streamlit application
-Author
+---
 
-Kavya Choubey
+# 📊 SQL Analysis
+
+Business-oriented SQL analysis was performed to answer key management questions.
+
+### Modules Covered
+
+- Data Audit
+- Executive Summary
+- Patient Demographics
+- Department Performance
+- Treatment Analysis
+- Financial Analysis
+- Recovery & Readmission Analysis
+
+More than **70 business-focused SQL queries** were written to extract meaningful insights.
+
+---
+
+# 📈 Power BI Dashboard
+
+The dashboard consists of **4 interactive report pages**.
+
+## 1️⃣ Executive Overview
+
+Provides a quick snapshot of hospital performance.
+
+**KPIs**
+
+- Total Patients
+- Total Revenue
+- Average Treatment Cost
+- Average Length of Stay
+- Average Recovery Score
+- Average Readmission Risk
+
+---
+
+## 2️⃣ Patient Demographics
+
+Analyzes
+
+- Patient Age Groups
+- Gender Distribution
+- Regional Distribution
+- Department-wise Patient Volume
+
+---
+
+## 3️⃣ Financial & Treatment Analysis
+
+Provides insights into
+
+- Revenue by Department
+- Revenue by Treatment Type
+- Revenue by Visit Type
+- Monthly Revenue Trend
+- Average Treatment Cost by Department
+
+---
+
+## 4️⃣ Recovery & Quality Analysis
+
+Monitors
+
+- Recovery Score by Department
+- Readmission Risk
+- Recovery by Age Group
+- Recovery by Treatment Type
+- Department Performance
+
+---
+
+# 🐍 Python Analysis
+
+Python was used for
+
+- Data Cleaning
+- Data Exploration
+- Exploratory Data Analysis
+- Correlation Analysis
+- Business Insights
+- Business Recommendations
+
+---
+
+# 🤖 Machine Learning
+
+### Business Problem
+
+Predict patient readmission risk based on hospital visit information.
+
+### Model Used
+
+✅ Random Forest Classifier
+
+### Workflow
+
+- Data Preprocessing
+- Feature Engineering
+- Label Encoding
+- Train-Test Split
+- Model Training
+- Model Evaluation
+- Feature Importance Analysis
+
+### Evaluation Metrics
+
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- Classification Report
+- Confusion Matrix
+
+---
+
+# 💡 Key Business Insights
+
+✔ Identified departments with the highest patient volume.
+
+✔ Analyzed hospital revenue across departments.
+
+✔ Compared treatment costs across hospital services.
+
+✔ Evaluated recovery performance across patient groups.
+
+✔ Monitored emergency and routine patient trends.
+
+✔ Predicted patient readmission risk using machine learning.
+
+---
+
+# 🚀 Future Improvements
+
+- Time Series Forecasting for patient visits
+- Readmission Prediction using XGBoost
+- Streamlit Web Application
+- Real-Time Dashboard Integration
+- Predictive Hospital Resource Planning
+
+---
+
+# 📷 Dashboard Preview
+
+> Dashboard screenshots are available in the **Images** folder.
+
+---
+
+# 👩‍💻 Author
+
+**Kavya Choubey**
 
 B.Tech Information Technology
 
+---
+
+## ⭐ If you found this project helpful, consider giving it a Star!
